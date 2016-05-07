@@ -31,12 +31,11 @@ function isTyler(name) {
 //Create a function called welcome that uses your getName function you created in the previous problem to get the users name,
 //then alerts "Welcome, " plus whatever the users name is.
 
-  //Code Here
+//  Code Here
   function welcome(name) {
     var name = prompt("What's your name?");
     alert("Welcome, " + name + "!!");
 }
-
 //////////////////PROBLEM 4////////////////////
 
 
@@ -45,7 +44,7 @@ function isTyler(name) {
 //What is the difference between arguments and parameters?
 
   //Answer Here
-parameters are values that expected be met, arguments are values that you present to be passed.
+// parameters are values that expected be met, arguments are values that you present to be passed.
 //////////////////PROBLEM 5////////////////////
 
 
@@ -54,7 +53,7 @@ parameters are values that expected be met, arguments are values that you presen
 
 
   //Answer Here
-//  0, false, undefined, null, "",''// 
+//  0, false, undefined, null, "",''//
 
 
 //////////////////PROBLEM 6////////////////////
@@ -64,13 +63,18 @@ parameters are values that expected be met, arguments are values that you presen
 //Create a function called myName that returns your name
 
   //Code Here
+  function myName() {
+      var fullName = "Sergio Barker";
+    return fullName;
+}
 
-
+// (fullName) ends up redundant
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
-
+// var newMyName = myName;
+//   alert(newMyName());
 //Now alert the result of invoking newMyName
 
 
@@ -82,9 +86,13 @@ parameters are values that expected be met, arguments are values that you presen
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-
+function outerFn() {
+  return function() {
+    return "sergio";
+  }
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
-
+var innerFn = outerFn();
 //Now invoke innerFn.
